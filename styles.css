@@ -1,0 +1,311 @@
+html {
+  background: #f7f7f7;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Inconsolata", monospace;
+  background: white;
+  max-width: 1000px;
+
+  margin: 0 auto; /* no margin at top and bottom, eqaual on left and right*/
+  color: rgb(49, 46, 46); /*text color in body*/
+  text-align: center;
+}
+
+header,
+footer {
+  background-color: #333a40;
+  color: white;
+  padding: 10px 10px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none; /*removes bullet points*/
+  line-height: 30px; /* increases vertical spacing*/
+}
+
+a {
+  text-decoration: none; /* removes links underline*/
+  color: inherit; /* inherit value from parent element*/
+}
+
+a:hover {
+  /* select anchor element when mouse hovers over it(pseudo class)*/
+  color: #0e69e9;
+}
+
+header li {
+  /* select the list elements in header  */
+  display: inline; /* makes list horizontal */
+}
+
+header h1,
+nav {
+  /* select h1 element and nav elements in header  */
+  display: inline-block; /* puts those elements inline */
+}
+
+input[type="search"] {
+  width: 100%;
+}
+
+header h1 {
+  width: 100%;
+}
+
+.product {
+  border: 1px solid grey;
+
+  width: 100%;
+  margin: 5px 3px;
+  padding: 5px;
+
+  box-sizing: border-box; /* it means padding and margin will be inside 200px 
+  width just like .product width 200px*/
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+.button {
+  padding: 10px;
+  display: inline-block; /* this is added for the vertical padding to work*/
+}
+
+/*(pseudo class) select first p element works with other elements too
+can select last and nth (ie 3rd) elements as well
+
+p:first-of-type {
+  color: red;
+}
+
+*/
+
+.button:last-of-type {
+  /*selects the last element with class="button"*/
+  background: #0e69e9;
+  color: white;
+}
+
+/* product detail page */
+.product-detail {
+  width: 100%; /* sets the the description div to 660px */
+}
+
+.product-detail img {
+  max-width: 100%;
+  float: left; /* will move image to the left and other
+   elements to the right of image */
+}
+
+/* Contact us */
+
+form {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+#map-div {
+  margin: auto;
+  position: relative;
+  width: 95%;
+  padding-bottom: 85.25%;
+  height: 0;
+  margin-bottom: 10px;
+}
+#map-div iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+form > div {
+  /* target all div elements which are direct child of form */
+  margin: 10px 0;
+}
+
+.inline label {
+  /* select all labels with class inline */
+  display: inline-block;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  /* selected input elements tags by type and texteira */
+  padding: 10px;
+  width: 80%; /* the length of the input fields */
+}
+
+/* table */
+table {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin: 10px 0;
+}
+tr:hover {
+  background: #f5f5f5;
+}
+th,
+td {
+  padding: 5px;
+}
+
+table th {
+  text-align: center;
+}
+table th:first-of-type,
+td:first-of-type {
+  text-align: left;
+}
+
+caption {
+  font-weight: bold;
+  font-style: italic;
+  border-bottom: 1px dotted;
+  padding: 10px;
+}
+
+@media (min-width: 450px) {
+  input[type="search"] {
+    width: 40%;
+    margin-left: 2em;
+  }
+  body {
+    text-align: left;
+  }
+  header {
+    text-align: center;
+  }
+  main {
+    max-width: 680px;
+    width: 69%;
+    display: inline-block;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  aside {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top; /* moves all items to the top of asdide */
+    padding: 10px;
+    position: sticky;
+    top: 0;
+  }
+
+  .product {
+    display: inline-block; /* products divs will appear on a hoeizontal line one after the other
+  also it is now possible to set top and bottom margin and padding */
+    width: 47%;
+  }
+  .product-detail {
+    width: 100%;
+  }
+
+  .product-detail img {
+    max-width: 50%;
+    float: left; /* will move image to the left and other
+   elements to the right of image */
+  }
+  table {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px 0;
+  }
+
+  .contact-subscribe-divs {
+    display: inline;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 90%; /* the length of the input fields */
+  }
+}
+
+@media (min-width: 800px) {
+  body {
+    width: 80%;
+  }
+  header {
+    text-align: left;
+  }
+  main {
+    max-width: 680px;
+    width: 70%;
+    display: inline-block;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  aside {
+    max-width: 260px;
+    width: 22%;
+    display: inline-block;
+    vertical-align: top; /*moves all items to the top of aside*/
+    padding: 10px;
+  }
+  .product {
+    width: 30%;
+  }
+
+  header h1 {
+    width: 50%;
+  }
+
+  input[type="search"] {
+    width: 20%;
+  }
+  input[type="search"] {
+    width: 19%;
+    margin-left: 1em;
+  }
+  .product-detail {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .product-detail img {
+    max-width: 50%;
+    float: left; /* will move image to the left and other
+   elements to the right of image */
+  }
+  table {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  th,
+  td {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 77%; /* the length of the input fields */
+  }
+
+  .inline label {
+    /* select all labels with class inline */
+
+    width: 15%;
+  }
+}
+
+#aside-main-container {
+  margin: 0;
+  padding: 0;
+}

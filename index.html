@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- set language in html tag -->
+<html lang="en">
+  <head>
+    <!-- to do with available characters utf-8 has all characters from most languages-->
+    <meta charset="UTF-8" />
+
+    <!-- for screen size change -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- initial-scale=1 means the browser will not zoom out on a smaller screen -->
+
+    <title>Tech Store</title>
+    <!-- <link rel="stylesheet" href="node_modules\normalize.css\normalize.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- header -->
+      <h1>Tech Store</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="">shop</a></li>
+          <li><a href="contact.html">contact us</a></li>
+        </ul>
+      </nav>
+
+      <input type="search" placeholder="search..." />
+    </header>
+    <div id="aside-main-container">
+      <aside>
+        <h2>Shop by</h2>
+        <section>
+          <h3>Category</h3>
+          <hr />
+          <ul>
+            <li>All items</li>
+            <li>Cameras</li>
+            <li>Laptops</li>
+            <li>Phones</li>
+            <li>Accessories</li>
+            <li>Other</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Price <span>(£)</span></h3>
+          <hr />
+          <ul>
+            <li>1 - 9</li>
+            <li>10 - 29</li>
+            <li>30 - 59</li>
+            <li>60 - 99</li>
+            <li>100 +</li>
+          </ul>
+        </section>
+      </aside>
+      <main>
+        <!-- all the products -->
+        <h2>All items</h2>
+
+        <div id="controler-div" class="product">
+          <!-- controler -->
+          <a href="product-detail.html">
+            <img src="images\controller.jpg" alt="game controller picture" />
+          </a>
+          <h4><a href="product-detail.html">Game Controller</a></h4>
+          <p>£ 78.95</p>
+          <p>Awesome game controller<br />for xbox!</p>
+          <a href="product-detail.html" class="button">More Info</a>
+          <a href="" class="button">Add To Cart</a>
+        </div>
+
+        <div id="headphones-div" class="product">
+          <!-- headphones -->
+          <a href="">
+            <img src="images\headphones.jpg" alt="headphones picture" />
+          </a>
+          <h4><a href="">White headphones</a></h4>
+          <p>£ 29.95</p>
+          <p>Awesome White <br />headphones!</p>
+          <a href="" class="button">More Info</a>
+          <a href="" class="button">Add To Cart</a>
+        </div>
+
+        <div id="camera-div" class="product">
+          <!-- camera -->
+          <a href="">
+            <img src="images\camera.jpg" alt="cannon camera picture" />
+          </a>
+          <h4><a href="">Canon Camera</a></h4>
+          <p>£ 281.70</p>
+          <p>Awesome Canon<br />camera!</p>
+          <a href="" class="button">More Info</a>
+          <a href="" class="button">Add To Cart</a>
+        </div>
+
+        <div id="lenses-div" class="product">
+          <!-- Lense -->
+          <a href="">
+            <img src="images\lenses.jpg" alt="camera lenses picture" />
+          </a>
+          <h4><a href="">Camera Lenses</a></h4>
+          <p>£ 99.95</p>
+          <p>
+            Perfect camera <br />
+            lenses!
+          </p>
+          <a href="" class="button">More Info</a>
+          <a href="" class="button">Add To Cart</a>
+        </div>
+
+        <div id="cables-div" class="product">
+          <!-- cables -->
+          <a href="">
+            <img src="images\cables.jpg" alt="cables picture" />
+          </a>
+          <h4><a href="">Cables</a></h4>
+          <p>£ 9.95</p>
+          <p>
+            Amazing <br />
+            cables!
+          </p>
+          <a href="" class="button">More Info</a>
+          <a href="" class="button">Add To Cart</a>
+        </div>
+
+        <div id="michrophone-div" class="product">
+          <!-- mic -->
+          <a href="">
+            <img src="images\microphone.jpg" alt="Vocal microphone picture" />
+          </a>
+          <h4><a href="">Vocal microphone</a></h4>
+          <p>£ 109.97</p>
+          <p>
+            Awesome Vocal <br />
+            microphone!
+          </p>
+          <a href="" class="button">More Info</a>
+          <a href="" class="button">Add To Cart</a>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="">shop</a></li>
+          <li><a href="contact.html">contact us</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
